@@ -3,17 +3,19 @@ package pruebas;
 import java.util.*;
 
 public class Alumno {
+	
 	private long code;
 	private String first_name;
 	private String last_name;
 	private String github_user;
-	private Collection<Materia> assignments;
-	/*public Alumno(long code, String nombre, String apellido, String gitUser) {
+	private ArrayList<Materia> assignments;
+	
+	public Alumno(long code, String nombre, String apellido, String gitUser) {
         this.code = code;
         this.first_name = nombre;
         this.last_name = apellido;
         this.github_user = gitUser;
-    }*/
+    }
 
 	public long getCode() {
 		return code;
@@ -31,7 +33,7 @@ public class Alumno {
 		return github_user;
 	}
 
-	public Collection<Materia> getAssignments() {
+	public ArrayList<Materia> getAssignments() {
 		return assignments;
 	}
 }

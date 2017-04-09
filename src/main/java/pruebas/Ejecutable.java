@@ -1,20 +1,19 @@
 package pruebas;
 
-import com.google.gson.*;
-
 public class Ejecutable {
 	
 	public static void main(String[] args) {
+		new Request().putAlumno(1234, "ciro", "of", "oc");
 		
-		String json = new Request().getAlumno();
-		Gson gson = new Gson(); 
-		Alumno alum = gson.fromJson(json, Alumno.class);
-		System.out.println("Legajo: " + alum.getCode());
-		System.out.println("Nombre: " + alum.getFirst_name());
-		System.out.println("Apellido: " + alum.getLast_name());
-		System.out.println("Github user: " + alum.getGithub_user());
 		
-		String jso = new Request().getMaterias();
-		System.out.println(jso);
+		Alumno alumno = new Request().getAlumno();
+		System.out.println("Legajo: " + alumno.getCode());
+		System.out.println("Nombre: " + alumno.getFirst_name());
+		System.out.println("Apellido: " + alumno.getLast_name());
+		System.out.println("Github user: " + alumno.getGithub_user());
+		
+		
+		Alumno materias = new Request().getMaterias();
+		System.out.println(materias.getAssignments().get(1).getTitle());
 		}
 }

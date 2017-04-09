@@ -6,7 +6,7 @@ public class Materia {
 	private int id;
 	private String title;
 	private String description;
-	private Collection<Nota> grades;
+	private ArrayList<Nota> grades;
 	
 	
 	public int getId() {
@@ -18,7 +18,7 @@ public class Materia {
 	public String getDescription() {
 		return description;
 	}
-	public Collection<Nota> getGrades() {
+	public ArrayList<Nota> getGrades() {
 		return grades;
 	}
 	
