@@ -35,8 +35,8 @@ public class Alumno {
 
 	/*public void setLast_name(String last_name) {
 		this.last_name = last_name;
-	}
-**/
+	}*/
+
 	public String getGithub_user() {
 		return github_user;
 	}
