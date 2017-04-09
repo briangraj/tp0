@@ -20,4 +20,13 @@ public class Request {
 		                  .get(ClientResponse.class)
 		                  .getEntity(String.class);
 	}
+	
+	public String getMaterias(){
+		return this.client.resource("http://notitas.herokuapp.com")
+			      		  .path("student/assignments")
+			    	 	  .header("Authorization", "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxMTEyMjIzMzMiLCJybmQiOiJ5SXNmZFIwN2lIR3BRRmVjYU9KT2VRPT0ifQ.9pVJGUXhrJPQ-TptNCt971l0h_1dWqWgMrHAWXJchho")
+			              .accept(MediaType.APPLICATION_JSON)
+			              .get(ClientResponse.class)
+			              .getEntity(String.class);
+	}
 }

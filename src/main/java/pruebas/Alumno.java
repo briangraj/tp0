@@ -1,11 +1,13 @@
 package pruebas;
 
+import java.util.*;
+
 public class Alumno {
 	private long code;
 	private String first_name;
 	private String last_name;
 	private String github_user;
-	
+	private Collection<Materia> assignments;
 	/*public Alumno(long code, String nombre, String apellido, String gitUser) {
         this.code = code;
         this.first_name = nombre;
@@ -27,5 +29,9 @@ public class Alumno {
 
 	public String getGithub_user() {
 		return github_user;
+	}
+
+	public Collection<Materia> getAssignments() {
+		return assignments;
 	}
 }

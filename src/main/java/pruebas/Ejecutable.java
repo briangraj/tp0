@@ -13,5 +13,8 @@ public class Ejecutable {
 		System.out.println("Nombre: " + alum.getFirst_name());
 		System.out.println("Apellido: " + alum.getLast_name());
 		System.out.println("Github user: " + alum.getGithub_user());
-	}
+		
+		String jso = new Request().getMaterias();
+		System.out.println(jso);
+		}
 }
