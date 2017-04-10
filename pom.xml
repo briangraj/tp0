@@ -22,6 +22,11 @@
 			<version>2.8.0</version>
 			<scope>compile</scope>
 		</dependency>
+		<dependency>
+			<groupId>org.uqbar-project</groupId>
+			<artifactId>arena-jface</artifactId>
+			<version>3.6.1</version>
+		</dependency>
     </dependencies>
 	
 	<build>

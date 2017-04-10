@@ -1,4 +1,4 @@
-package pruebas;
+package prueba;
 
 public class Nota {
 	private int id;
