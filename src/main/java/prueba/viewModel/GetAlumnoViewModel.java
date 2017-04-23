@@ -12,7 +12,7 @@ import prueba.Alumno;
 
 @Observable
 public class GetAlumnoViewModel {
-	private long code;
+	private String code;
 	private String first_name;
 	private String last_name;
 	private String github_user;
@@ -42,11 +42,11 @@ public class GetAlumnoViewModel {
 		this.github_user = alumno.getGithub_user();
 	}
 
-	public long getCode() {
+	public String getCode() {
 		return code;
 	}
 
-	public void setCode(long code) {
+	public void setCode(String code) {
 		this.code = code;
 	}
 

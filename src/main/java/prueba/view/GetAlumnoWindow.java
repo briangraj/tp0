@@ -21,7 +21,6 @@ public class GetAlumnoWindow extends Dialog<GetAlumnoViewModel> {
 		Panel form = new Panel(mainPanel);
 		this.setTitle("Alumno");
 		form.setLayout(new ColumnLayout(2));
-		form.setWidth(600);
 		
 		new Label(form).setText("Token: ");
 		new TextBox(form).bindValueToProperty("token");

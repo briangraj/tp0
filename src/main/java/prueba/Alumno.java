@@ -2,13 +2,13 @@ package prueba;
 
 public class Alumno {
 	
-	private long code;
+	private String code;
 	private String first_name;
 	private String last_name;
 	private String github_user;
 	//private ArrayList<Materia> assignments;
 	
-	public long getCode() {
+	public String getCode() {
 		return code;
 	}
 
@@ -23,7 +23,7 @@ public class Alumno {
 	public String getGithub_user() {
 		return github_user;
 	}
-	public void setCode(long code) {
+	/*public void setCode(String code) {
 		this.code = code;
 	}
 
@@ -37,6 +37,6 @@ public class Alumno {
 
 	public void setGithub_user(String github_user) {
 		this.github_user = github_user;
-	}
+	}*/
 
 }
