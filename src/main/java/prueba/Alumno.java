@@ -1,12 +1,14 @@
 package prueba;
 
+import java.util.List;
+
 public class Alumno {
 	
 	private String code;
 	private String first_name;
 	private String last_name;
 	private String github_user;
-	//private ArrayList<Materia> assignments;
+	private List<Materia> assignments;
 	
 	public String getCode() {
 		return code;
